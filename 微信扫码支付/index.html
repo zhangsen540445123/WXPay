@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>基于canvas的纯JS二维码生成插件</title>
+	<script src="qrious.js"></script>
+</head>
+<body>
+	
+	<div>
+		<img id="qrious"/>
+	</div>
+
+	<script>
+	    var qr = new QRious({
+	      element: document.getElementById('qrious'),
+	      size: 250,
+	      value: 'http://www.baidu.com'
+	    })
+	</script>
+</body>
+</html>
